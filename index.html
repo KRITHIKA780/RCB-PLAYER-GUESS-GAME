@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏏 RCB Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🏏 RCB Players Guessing Game</h1>
+            <p class="subtitle">Guess the Royal Challengers Bangalore players from clues!</p>
+        </header>
+
+        <div class="stats-bar">
+            <div class="stat">
+                <span class="stat-label">Score</span>
+                <span class="stat-value" id="score">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Streak</span>
+                <span class="stat-value" id="streak">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Questions</span>
+                <span class="stat-value" id="questions">0/10</span>
+            </div>
+        </div>
+
+        <main class="game-area">
+            <div class="clue-box">
+                <h2>Clue</h2>
+                <p id="clue" class="clue-text">Loading...</p>
+                <span class="clue-counter"><span id="clueNum">1</span>/3</span>
+            </div>
+
+            <div class="input-box">
+                <input 
+                    type="text" 
+                    id="guessInput" 
+                    placeholder="Type player name..." 
+                    autocomplete="off"
+                    class="input-field"
+                >
+                <button id="submitBtn" class="btn btn-primary">Submit Guess</button>
+            </div>
+
+            <div id="feedback" class="feedback-box"></div>
+
+            <div class="button-group">
+                <button id="hintBtn" class="btn btn-secondary">Get Hint</button>
+                <button id="skipBtn" class="btn btn-warning">Skip</button>
+                <button id="resetBtn" class="btn btn-danger">Reset Game</button>
+            </div>
+        </main>
+
+        <div id="gameOverModal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Game Over! 🎉</h2>
+                <p class="final-score">Your Score: <strong id="finalScore">0</strong>/10</p>
+                <p id="resultMessage" class="result-message"></p>
+                <button id="playAgainBtn" class="btn btn-primary">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
